@@ -34,7 +34,7 @@ const handleIngredientChange = (event, idx) => {
     console.log(recepie)
     event.preventDefault();
     try{
-      const rece=await axios.post("http://localhost:3001/recipies",recepie,
+      const rece=await axios.post("https://foodie-owyz.onrender.com/recipies",recepie,
       {headers:{authorization:cookies.access_token}});
       alert("recepie created")
     }

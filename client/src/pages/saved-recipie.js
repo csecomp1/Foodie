@@ -8,7 +8,7 @@ const SavedRecipie = () => {
     
     const fetchsavedrece=async()=>{
       try{
-        const res=await axios.get(`http://localhost:3001/recipies/savedrecipie/${userId}`)
+        const res=await axios.get(`https://foodie-owyz.onrender.com/recipies/savedrecipie/${userId}`)
          
         setSaverece(res.data.savedRecipes)
       }

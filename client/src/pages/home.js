@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(()=>{
       const fetchData=async()=>{
         try{
-          const response=await axios.get("http://localhost:3001/recipies");
+          const response=await axios.get("https://foodie-owyz.onrender.com/recipies");
           setRece(response.data);
           console.log(response.data);
         }
@@ -23,7 +23,7 @@ const Home = () => {
       fetchData();
       const fetchsavedrece=async()=>{
         try{
-           const res=await axios.get(`http://localhost:3001/recipies/savedrecipie/ids/${userId}`)
+           const res=await axios.get(`https://foodie-owyz.onrender.com/recipies/savedrecipie/ids/${userId}`)
           
            setSavrece(res.data.savedRecipie);
           }
@@ -35,7 +35,7 @@ const Home = () => {
   },[])
   const saverece=async(recipieID)=>{
       try{
-         const resp=await axios.put("http://localhost:3001/recipies",{
+         const resp=await axios.put("https://foodie-owyz.onrender.com/recipies",{
          recipieID,
          userId
          },{headers:{authorization:cookies.access_token}})
