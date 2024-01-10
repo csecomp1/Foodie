@@ -1,6 +1,6 @@
 const express=require("express");
 const jwt=require("jsonwebtoken")
-const bcrypt =require("bcrypt")
+
 const router=express.Router()
 const UserModel=require("../models/Users.js");
 router.post("/register",async(req,res)=>{
@@ -10,8 +10,8 @@ router.post("/register",async(req,res)=>{
      if(user){
         return res.json({message:"user already exists"})
      }
-     const hashedpass=await bcrypt.hash(password,10)
-     const newuser=new UserModel({username,password:hashedpass})
+     
+     const newuser=new UserModel({username,password})
      await newuser.save()
      res.json({message:"user registered successfully"})
 })
@@ -21,8 +21,8 @@ const user=await UserModel.findOne({username:username})
 if(!user){
     return res.json({message:"user does not exsists"});
 }
-const ispasswordsame=await bcrypt.compare(password,user.password);
-if(!ispasswordsame){
+
+if(password!=user.password){
     return res.json({message:"username or password is Incorrect"});
 }
 const token=jwt.sign({id:user._id},"secret")
