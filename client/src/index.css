@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.nav h{
+  color:blueviolet;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.nav a{
+text-decoration: none;
+color:white;
+margin-right:20px;
+font-size: 20px;
+}
+.nav {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,181,72,1) 49%, rgba(0,212,255,1) 100%);
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  padding:15px;
+}
+.recebox{
+  display: grid;
+
+
+}
+.recebox ul li{
+  list-style-type: none;
+
+}
+.rece{
+  border:2px solid green;
+  width:500px;
+  margin:0px auto;
+  background-color: rgba(27, 26, 26, 0.5);
+  color:aliceblue;
+  text-align:left;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.rece:hover{
+  border:2px solid violet;
+}
+.rece h{
+  font-weight: bold;
+}
+.rece img{
+  width:500px;
+  height:200px;
+  margin-top:20px;
+}
+.auth{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:20px;
+
+}
+.auth-container h{
+  font-size: 30px;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:blueviolet;
+  font-style: italic;
+}
+.auth-container{
+  border:1px solid white;
+  width:400px;
+   margin:0px auto;
+   margin-top:200px;
+   padding:20px;
+   background-color: white;
+}
+.auth-container input{
+   margin:20px;
+  background-color: rgb(59, 57, 57);
+  padding:5px;
+  color:white;
+  border-radius: 10px;
+}
+.auth-container label{
+  font-size: 20px;
+  font-family: cursive;
+}
+.auth-container button{
+  padding:10px;
+  width:90px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color:white;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.create-recipe{
+  width:600px;
+  margin:0px auto;
+  border:2px solid black;
+  background-color: white;
+  margin-top:150px;
+}
+.create-recipe form{
+ display:grid;
+ text-align: left;
+ padding:20px;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ font-weight: bold;
+}
+.create-recipe input,textarea{
+  margin-bottom:10px;
+  margin-top: 10px;
+  
+}
+.create-recipe button{
+  background-color: rgb(248, 171, 84);
+  padding:5px;
+  border-radius: 5px;
+  color:white;
+}
+.rece-name{
+  text-align: center;
+}
+.rece-ingre{
+  
+  margin:10px;
+}
+.rece button{
+  
+  margin-left:200px;
+  padding:10px;
+  width:100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: black;
+  border:2px solid purple;
+  color:white;
+  font-style: italic;
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.rece button:hover{
+  border:2px solid green;
+}
+
